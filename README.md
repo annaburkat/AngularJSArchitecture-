@@ -1,6 +1,6 @@
-# VeganApp
+# AngularJS App 
 
-Demo version of VeganApp
+
 
 ### Prerequisites
 
@@ -14,7 +14,7 @@ You will need the following to install on your computer:
 ### Installing
 
 ```
-* git clone https://github.com/annaburkat/veganapp.git
-* cd veganapp
+* git clone 
+* cd 
 * npm install && npm start
 ```
