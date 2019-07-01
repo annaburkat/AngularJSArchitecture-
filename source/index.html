@@ -1,0 +1,53 @@
+<html ng-app="Eggly">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Eggly</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/10209451bc.js"></script>
+	<link rel="stylesheet" href="assets/css/normalize.css">
+	<link rel="stylesheet" href="assets/css/eggly.css">
+</head>
+
+<body ng-controller="MainCtrl">
+	<div class="container-fluid" style="padding:50px;">
+		<div class="row">
+			<div class="col-xs-4">
+				<a href="#">
+					<img src="https://raw.githubusercontent.com/annaburkat/FirstAngularApp/master/egg/img/download.jpg" ng-click="setCurrentCategory(null)" style="width:100px; margin: 10px; padding:10px; margin-bottom:50px;">
+				</a>
+			</div>
+			<div class="col-xs-8">
+				<div style="margin: 10px; padding:10px; margin-bottom:50px;">
+					<h1 style="color:#EA738DFF;">{{currentCategory.name}}</h1>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-md-6">
+				<ui-view name="categories" />
+			</div>
+			<div class="col-xs-12 col-md-6">
+				<ui-view name="bookmarks" />
+			</div>
+		</div>
+	</div>
+
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.13.1/lodash.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
+	<script src="vendor/angular-ui-router.min.js"></script>
+
+	<script src="app/eggly-app.js"></script>
+	<script src="app/categories/categories.js"></script>
+	<script src="app/categories/bookmarks/bookmarks.js"></script>
+	<script src="app/categories/bookmarks/create/bookmark-create.js"></script>
+	<script src="app/categories/bookmarks/edit/bookmark-edit.js"></script>
+	<script src="app/common/models/bookmarks-model.js"></script>
+	<script src="app/common/models/categories-model.js"></script>
+</body>
+
+</html>

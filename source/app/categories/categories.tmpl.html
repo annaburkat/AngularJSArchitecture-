@@ -1,0 +1,5 @@
+<ul class="nav">
+	<li ng-repeat="category in categories" ng-class="{'active': isCurrentCategory(category)}" style="background:#CBCE91FF; border:1px solid #EA738DFF; margin: 10px; padding:10px;">
+		<a href="#" ng-click="setCurrentCategory(category);">{{ category.name }}</a>
+	</li>
+</ul>
